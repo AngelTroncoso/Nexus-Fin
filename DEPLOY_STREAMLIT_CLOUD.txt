@@ -1,0 +1,173 @@
+═══════════════════════════════════════════════════════════════
+  DESPLIEGUE EN STREAMLIT CLOUD - PASOS RÁPIDOS
+═══════════════════════════════════════════════════════════════
+
+✅ REPOSITORIO SUBIDO A GITHUB
+URL: https://github.com/AngelTroncoso/Nexus-Fin
+
+═══════════════════════════════════════════════════════════════
+
+PASO 1: ACCEDER A STREAMLIT CLOUD
+═══════════════════════════════════════════════════════════════
+
+1. Ve a: https://share.streamlit.io
+2. Haz clic en "Sign in" 
+3. Conecta con tu cuenta de GitHub (AngelTroncoso)
+
+═══════════════════════════════════════════════════════════════
+
+PASO 2: CREAR NUEVA APP
+═══════════════════════════════════════════════════════════════
+
+1. Clic en "New app" (botón azul arriba a la derecha)
+
+2. Completa el formulario:
+
+   Repository:
+   ┌─────────────────────────────────────────┐
+   │ AngelTroncoso/Nexus-Fin                 │
+   └─────────────────────────────────────────┘
+
+   Branch:
+   ┌─────────────────────────────────────────┐
+   │ main                                    │
+   └─────────────────────────────────────────┘
+
+   Main file path:
+   ┌─────────────────────────────────────────┐
+   │ app.py                                  │
+   └─────────────────────────────────────────┘
+
+   App URL (personalizable):
+   ┌─────────────────────────────────────────┐
+   │ nexus-fin-angel                         │
+   └─────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════
+
+PASO 3: CONFIGURAR API KEY (OPCIONAL)
+═══════════════════════════════════════════════════════════════
+
+Si quieres usar el LLM real:
+
+1. Clic en "Advanced settings"
+2. En la sección "Secrets", pega esto:
+
+   ┌─────────────────────────────────────────┐
+   │ OPENROUTER_API_KEY = "tu_clave_aqui"    │
+   │ OPENROUTER_MODEL = "google/gemini-flash-1.5" │
+   └─────────────────────────────────────────┘
+
+   📌 Obtén tu clave en: https://openrouter.ai/keys
+
+   ⚠️ IMPORTANTE: Sin API key, el sistema funciona
+                   en modo fallback (lógica heurística)
+
+═══════════════════════════════════════════════════════════════
+
+PASO 4: DESPLEGAR
+═══════════════════════════════════════════════════════════════
+
+1. Clic en "Deploy!" (botón azul)
+2. Espera 2-3 minutos mientras se instala
+3. ✅ ¡Listo!
+
+═══════════════════════════════════════════════════════════════
+
+TU APP ESTARÁ EN:
+═══════════════════════════════════════════════════════════════
+
+🌐 https://nexus-fin-angel.streamlit.app
+
+(o el nombre que hayas elegido)
+
+═══════════════════════════════════════════════════════════════
+
+VERIFICAR QUE TODO FUNCIONA
+═══════════════════════════════════════════════════════════════
+
+1. La página carga
+2. Ves la interfaz con la barra lateral
+3. Puedes seleccionar escenarios
+4. Al hacer clic en "Ejecutar Análisis":
+   - Se genera el gráfico
+   - Aparecen las métricas
+   - Se muestra el razonamiento del agente
+
+═══════════════════════════════════════════════════════════════
+
+COMPARTIR TU APP
+═══════════════════════════════════════════════════════════════
+
+📤 Comparte el link directamente:
+   https://nexus-fin-angel.streamlit.app
+
+🔓 Es público - No requiere login
+
+═══════════════════════════════════════════════════════════════
+
+ACTUALIZAR LA APP
+═══════════════════════════════════════════════════════════════
+
+La app se actualiza automáticamente cuando haces:
+
+   git push origin main
+
+Streamlit Cloud detecta el cambio y redespliega 🔄
+
+═══════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+❌ "ModuleNotFoundError"
+   → Verifica que requirements.txt esté en el repo
+
+❌ "App no inicia"
+   → Revisa los logs en Streamlit Cloud
+   → Botón "Manage app" → "Logs"
+
+❌ "Gráficos no se ven"
+   → Refresca el navegador (Ctrl+F5)
+
+❌ "Error de API"
+   → Es normal sin API key configurada
+   → El sistema funciona en modo fallback
+
+═══════════════════════════════════════════════════════════════
+
+RECURSOS ÚTILES
+═══════════════════════════════════════════════════════════════
+
+📖 Guía completa de despliegue:
+   Ver archivo: DEPLOY.md en el repositorio
+
+📚 Documentación completa:
+   Ver archivo: README.md en el repositorio
+
+🧪 Tests locales:
+   python test_system.py
+
+═══════════════════════════════════════════════════════════════
+
+LÍMITES DEL PLAN GRATUITO
+═══════════════════════════════════════════════════════════════
+
+✅ Apps ilimitadas
+✅ 1 GB RAM por app
+✅ CPU compartido
+⚠️ Se duerme tras inactividad (despierta en ~30seg)
+
+Perfecto para demos y portfolios 🎯
+
+═══════════════════════════════════════════════════════════════
+
+¡LISTO PARA DESPLEGAR! 🚀
+═══════════════════════════════════════════════════════════════
+
+Siguiente paso:
+1. Ve a: https://share.streamlit.io
+2. Clic en "New app"
+3. Sigue los pasos arriba
+
+═══════════════════════════════════════════════════════════════
