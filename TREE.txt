@@ -1,0 +1,204 @@
+NEXUS-FIN: ESTRUCTURA COMPLETA DEL PROYECTO
+============================================
+
+estaticodinamico/
+│
+├── 📄 DOCUMENTACIÓN (8 archivos)
+│   ├── INDEX.md                        # Índice de documentación
+│   ├── RESUMEN_EJECUTIVO.md            # Visión ejecutiva (5 min)
+│   ├── QUICKSTART.md                   # Inicio rápido (5 min)
+│   ├── README.md                       # Guía completa (15 min)
+│   ├── ARCHITECTURE.md                 # Arquitectura técnica (30 min)
+│   ├── EXAMPLES.md                     # 8+ casos de uso (20 min)
+│   ├── CHANGELOG.md                    # Historial de versiones
+│   └── LICENSE                         # Licencia MIT
+│
+├── 🧠 CÓDIGO PRINCIPAL (4 archivos)
+│   ├── app.py                          # Interfaz Streamlit (~400 líneas)
+│   ├── router_engine.py                # Motor de decisión LLM (~250 líneas)
+│   └── engines/
+│       ├── __init__.py                 # Módulo de engines
+│       ├── predictive_engine.py        # Motor A - Predictivo (~180 líneas)
+│       └── adaptive_engine.py          # Motor B - Adaptativo (~250 líneas)
+│
+├── 🔧 CONFIGURACIÓN (3 archivos)
+│   ├── requirements.txt                # Dependencias Python
+│   ├── .env.example                    # Plantilla de configuración API
+│   └── .gitignore                      # Git ignore rules
+│
+└── 🧪 UTILIDADES (3 archivos)
+    ├── test_system.py                  # Suite de tests (~300 líneas)
+    ├── start.bat                       # Script de inicio automático (Windows)
+    └── TREE.txt                        # Este archivo
+
+============================================
+RESUMEN ESTADÍSTICO
+============================================
+
+Archivos totales:           18
+Líneas de código:           ~1,500
+Líneas de documentación:    ~3,500
+Archivos Python:            6
+Archivos Markdown:          8
+Tests implementados:        5
+Dependencias:               7
+
+============================================
+TECNOLOGÍAS UTILIZADAS
+============================================
+
+Backend:        Python 3.11+
+Frontend:       Streamlit 1.28+
+Visualización:  Plotly 5.17+
+API LLM:        OpenRouter (multi-modelo)
+Procesamiento:  Pandas 2.1+, NumPy 1.24+
+HTTP Client:    Requests 2.31+
+Config:         Python-dotenv 1.0+
+
+============================================
+CARACTERÍSTICAS DEL SISTEMA
+============================================
+
+✓ Decisión autónoma con LLM
+✓ Razonamiento transparente (JSON)
+✓ Visualización interactiva (Plotly)
+✓ Modo fallback sin API
+✓ 2 motores especializados (A y B)
+✓ Suite completa de tests
+✓ Documentación exhaustiva
+✓ Script de inicio automático
+
+============================================
+INICIO RÁPIDO
+============================================
+
+Windows:
+  1. Doble clic en: start.bat
+
+Manual:
+  1. pip install -r requirements.txt
+  2. copy .env.example .env
+  3. streamlit run app.py
+
+Tests:
+  python test_system.py
+
+============================================
+FLUJO DE EJECUCIÓN
+============================================
+
+1. Usuario configura escenario en Streamlit UI
+2. Sistema crea scenario_data con métricas
+3. RouterEngine analiza y consulta LLM (OpenRouter)
+4. LLM decide: Ruta A (Predictivo) o Ruta B (Adaptativo)
+5. Motor seleccionado genera proyección/trayectoria
+6. Resultados visualizados en Plotly con métricas
+
+============================================
+DECISIONES DE ARQUITECTURA
+============================================
+
+✓ OpenRouter: Acceso multi-modelo con una API
+✓ Streamlit: Prototipado rápido e interactivo
+✓ Plotly: Gráficos profesionales sin JavaScript
+✓ Módulos separados: Fácil extensión y testing
+✓ Modo fallback: Resiliencia ante fallas de API
+✓ JSON explícito: Transparencia total del LLM
+
+============================================
+ESCENARIOS SOPORTADOS
+============================================
+
+1. Entorno Estable
+   - Volatilidad: 5%
+   - Sin shocks
+   - Decisión esperada: Ruta A (Predictivo)
+
+2. Shock de Liquidez Crítico
+   - Volatilidad: 28%
+   - Shocks detectados
+   - Decisión esperada: Ruta B (Adaptativo)
+
+============================================
+MÉTRICAS GENERADAS
+============================================
+
+Motor Predictivo (A):
+  • Flujo promedio proyectado
+  • Desviación estándar
+  • Bandas de confianza (95%)
+  • Volatilidad index
+  • Proyección min/max
+
+Motor Adaptativo (B):
+  • Número de rebalanceos
+  • Eventos de shock manejados
+  • Impacto total de shocks
+  • Eficiencia de recuperación
+  • Flujo min/max
+
+============================================
+DOCUMENTACIÓN POR PERFIL
+============================================
+
+Usuario No Técnico:
+  → RESUMEN_EJECUTIVO.md (5 min)
+  → Ejecutar start.bat
+  → EXAMPLES.md - Ejemplos 1-2
+
+Analista/PM:
+  → README.md completo
+  → EXAMPLES.md - Todos los casos
+
+Desarrollador:
+  → ARCHITECTURE.md
+  → Código fuente en app.py + engines/
+  → test_system.py
+
+Arquitecto:
+  → ARCHITECTURE.md completo
+  → Todo el código fuente
+  → EXAMPLES.md - Integración
+
+============================================
+COMANDOS ÚTILES
+============================================
+
+Ejecutar aplicación:
+  streamlit run app.py
+
+Ejecutar tests:
+  python test_system.py
+
+Instalar dependencias:
+  pip install -r requirements.txt
+
+Ver estructura:
+  type TREE.txt          (Windows)
+  cat TREE.txt           (Linux/Mac)
+
+============================================
+CONTACTO Y LICENCIA
+============================================
+
+Proyecto:   Nexus-Fin
+Versión:    1.0.0
+Fecha:      Noviembre 2026
+Licencia:   MIT (ver LICENSE)
+Stack:      Python | Streamlit | OpenRouter | Plotly
+
+============================================
+PRÓXIMOS PASOS
+============================================
+
+1. ✅ Leer INDEX.md para navegación
+2. ✅ Seguir QUICKSTART.md para instalar
+3. ✅ Ejecutar streamlit run app.py
+4. ✅ Experimentar con ambos escenarios
+5. ✅ Explorar EXAMPLES.md para casos avanzados
+
+============================================
+
+¡Listo para ejecutar! 🚀
+
+Ejecuta: streamlit run app.py
