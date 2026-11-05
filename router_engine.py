@@ -17,7 +17,7 @@ class RouterEngine:
     
     def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
         self.api_key = api_key or os.getenv("OPENROUTER_API_KEY")
-        self.model = model or os.getenv("OPENROUTER_MODEL", "google/gemini-flash-1.5")
+        self.model = model or os.getenv("OPENROUTER_MODEL", "nvidia/nemotron-3-nano-30b-a3b:free")
         self.base_url = "https://openrouter.ai/api/v1/chat/completions"
         
     def analyze_scenario(self, scenario_data: Dict) -> Tuple[str, Dict]:

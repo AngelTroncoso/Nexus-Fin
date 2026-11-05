@@ -196,7 +196,7 @@ from engines.adaptive_engine import AdaptiveEngine
 scenario = create_scenario_data("stable")
 
 # 2. Router decide
-router = RouterEngine(api_key="tu_key", model="google/gemini-flash-1.5")
+router = RouterEngine(api_key="tu_key", model="nvidia/nemotron-3-nano-30b-a3b:free")
 route, decision = router.analyze_scenario(scenario)
 
 print(f"Decisión: Ruta {route}")

@@ -134,7 +134,7 @@ def render_sidebar():
         model = st.selectbox(
             "Modelo LLM",
             options=[
-                "google/gemini-flash-1.5",
+                "nvidia/nemotron-3-nano-30b-a3b:free",
                 "anthropic/claude-3-haiku",
                 "openai/gpt-3.5-turbo",
                 "meta-llama/llama-3-8b-instruct"

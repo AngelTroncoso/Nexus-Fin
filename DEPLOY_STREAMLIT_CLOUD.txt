@@ -55,7 +55,7 @@ Si quieres usar el LLM real:
 
    ┌─────────────────────────────────────────┐
    │ OPENROUTER_API_KEY = "tu_clave_aqui"    │
-   │ OPENROUTER_MODEL = "google/gemini-flash-1.5" │
+   │ OPENROUTER_MODEL = "nvidia/nemotron-3-nano-30b-a3b:free" │
    └─────────────────────────────────────────┘
 
    📌 Obtén tu clave en: https://openrouter.ai/keys

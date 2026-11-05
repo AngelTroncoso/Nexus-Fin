@@ -88,7 +88,7 @@ Edita `.env` y añade tu clave de OpenRouter:
 
 ```env
 OPENROUTER_API_KEY=tu_clave_real_aqui
-OPENROUTER_MODEL=google/gemini-flash-1.5
+OPENROUTER_MODEL=nvidia/nemotron-3-nano-30b-a3b:free
 ```
 
 **¿Dónde obtener la API Key?**  
@@ -134,7 +134,7 @@ estaticodinamico/
 
 2. **OpenRouter API**:
    - Introduce tu API Key
-   - Selecciona el modelo LLM (recomendado: `google/gemini-flash-1.5`)
+   - Selecciona el modelo LLM (recomendado: `nvidia/nemotron-3-nano-30b-a3b:free` - GRATUITO)
 
 3. **Parámetros**:
    - Horizonte temporal (30-180 días)
@@ -160,7 +160,7 @@ El `RouterEngine` implementa el núcleo de decisión:
 ```python
 # Flujo simplificado
 scenario_data = create_scenario_data("stable" o "shock")
-router = RouterEngine(api_key="tu_key", model="gemini-flash-1.5")
+router = RouterEngine(api_key="tu_key", model="nvidia/nemotron-3-nano-30b-a3b:free")
 route, decision = router.analyze_scenario(scenario_data)
 
 if route == "A":
@@ -223,7 +223,7 @@ El LLM responde con:
 
 | Modelo | Provider | Velocidad | Costo |
 |--------|----------|-----------|-------|
-| `google/gemini-flash-1.5` | Google | ⚡⚡⚡ | $ |
+| `nvidia/nemotron-3-nano-30b-a3b:free` | NVIDIA | ⚡⚡⚡ | **GRATIS** |
 | `anthropic/claude-3-haiku` | Anthropic | ⚡⚡ | $$ |
 | `openai/gpt-3.5-turbo` | OpenAI | ⚡⚡ | $$ |
 | `meta-llama/llama-3-8b-instruct` | Meta | ⚡ | $ |

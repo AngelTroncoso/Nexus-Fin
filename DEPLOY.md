@@ -37,7 +37,7 @@ Si quieres usar el LLM real:
 
 ```toml
 OPENROUTER_API_KEY = "tu_clave_real_aqui"
-OPENROUTER_MODEL = "google/gemini-flash-1.5"
+OPENROUTER_MODEL = "nvidia/nemotron-3-nano-30b-a3b:free"
 ```
 
 **Obtener API Key:** https://openrouter.ai/keys
@@ -110,7 +110,7 @@ Para desarrollo local, crea:
 ```toml
 # .streamlit/secrets.toml
 OPENROUTER_API_KEY = "tu_clave_local"
-OPENROUTER_MODEL = "google/gemini-flash-1.5"
+OPENROUTER_MODEL = "nvidia/nemotron-3-nano-30b-a3b:free"
 ```
 
 ### En Streamlit Cloud (Producción)
