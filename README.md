@@ -1,5 +1,9 @@
 # 🧠 Nexus-Fin: Motor de Decisiones en Paralelo
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Sistema multiagente de toma de decisiones autónomas para gestión de tesorería y flujo de caja**
 
 *Predicción vs. Adaptación | Powered by OpenRouter API + LLM*
