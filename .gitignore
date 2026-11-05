@@ -37,8 +37,9 @@ venv.bak/
 # Environment variables
 .env
 
-# Streamlit
-.streamlit/
+# Streamlit (permitir config.toml para tema personalizado)
+.streamlit/secrets.toml
+.streamlit/credentials.toml
 
 # OS
 .DS_Store
